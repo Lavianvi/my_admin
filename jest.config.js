@@ -20,5 +20,16 @@ module.exports = {
     'lcov',
     'text-summary'
   ],
-  testURL: 'http://localhost/'
+  testURL: 'http://localhost/',
+  'compilerOptions': {
+    'baseUrl': '.',
+    'paths': {
+      '@/*': ['src/*']
+    },
+    'target': 'ES6',
+    'allowSyntheticDefaultImports': true
+  },
+  'include': ['src/**/*'],
+  'exclude': ['node_modules']
+
 }
